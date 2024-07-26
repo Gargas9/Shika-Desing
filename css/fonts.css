@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "WestTrial";
+    src: url("./tipos/WestTrial/WestTrial-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    src: url("../tipos/Roboto.ttf") format("truetype-variations");
+    font-weight: 100 900;
+    font-display: swap;
+  }

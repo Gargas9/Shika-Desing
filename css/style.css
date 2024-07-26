@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* VERSIÓN-MOVIL */
+body {
+  width: 100vw;
+  min-height: 100vw;
+  scroll-behavior: smooth;
+
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: normal;
+
+  color: white;
+  background-color: rgb(24, 24, 16);
+
+  font-variation-settings: "wdth" 25, "opsz" 8, "wght" 200, "GRAD" 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.bold {
+  font-variation-settings: "wdth" 25, "opsz" 8, "wght" 600, "GRAD" 0;
+}
+
+.italic {
+  font-variation-settings: "wdth" 25, "opsz" 8, "wght" 200, "GRAD" 0, "slnt" -10;
+}
+
+.header {
+  height: 100vh;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .shika {
+    font-family: "Roboto";
+    font-size: 4rem;
+    font-variation-settings: "wdth" 200, "wght" 400;
+    transition: 200ms;
+
+    &:hover {
+      font-variation-settings: "wdth" 800, "wght" 800;
+    }
+  }
+
+  .texto-inicio {
+    margin-top: 2rem;
+    margin-left: auto;
+    text-align: right;
+
+    p {
+      width: 70vw;
+    }
+  }
+}
+.ver-mas {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+
+  .marquesina {
+    text-align: left;
+  }
+
+  .marquesina1 {
+    text-align: right;
+  }
+}
+
+.presentacion {
+  margin-bottom: 3rem;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+ 
+
+  .about-me{
+    display: flex;
+    flex-direction: row-reverse;
+
+    .link-about{
+      text-decoration: line-through;
+    font-variation-settings: "wdth" 25, "opsz" 8, "wght" 200, "GRAD" 0;
+
+    &:hover{
+      text-decoration: none;
+      font-variation-settings: "wdth" 25, "opsz" 8, "wght" 400, "GRAD" 0;
+    }
+
+    }
+    
+  }
+}
+
+
+.hab {
+  padding: 0 2rem;
+  font-size: 2.5rem;
+
+  font-variation-settings: "wdth" 30, "opsz" 8, "wght" 200, "GRAD" 0;
+  transition: 300ms;
+
+  &:hover {
+    font-variation-settings: "wdth" 50, "opsz" 8, "wght" 600, "GRAD" 0;
+  }
+}
+
+.container-video {
+  width: 100%;
+
+  margin-top: 3rem;
+
+  .video1 {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.frase {
+  text-align: center;
+  padding: 5rem 5rem;
+}
+
+.container {
+  max-width: 1024px;
+  margin-inline: auto;
+  padding: 0 2rem 4rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  .card {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.pregunta {
+  padding: 2rem;
+  font-size: 2.5rem;
+  line-height: 1;
+
+  & p:first-child {
+    text-align: left;
+  }
+
+  & p:last-child {
+    text-align: right;
+  }
+}
+
+.movimiento {
+  font-variation-settings: "wdth" 25, "opsz" 8, "wght" 200, "GRAD" 0;
+
+  &:hover {
+    font-variation-settings: "wdth" 100, "opsz" 8, "wght" 200, "GRAD" 0;
+  }
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+
+  .correo1 {
+    font-size: 1rem;
+    font-variation-settings: "wdth" 25, "opsz" 8, "wght" 200, "GRAD" 0;
+    transition: 200ms;
+
+    &:hover {
+      font-variation-settings: "wdth" 50, "opsz" 8, "wght" 600, "GRAD" 0;
+    }
+  }
+
+  .rrss {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  .rrss img {
+    width: 1.5rem;
+    height: auto;
+    padding: 0.5rem;
+  }
+}
+
+.pie {
+  border-top: 1px solid white;
+
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+
+  .copyright {
+    font-size: 1rem;
+    font-variation-settings: "wdth" 25, "opsz" 8, "wght" 600, "GRAD" 0;
+  }
+
+  .arriba {
+    font-size: 1rem;
+    text-decoration: line-through;
+    font-variation-settings: "wdth" 25, "opsz" 8, "wght" 200, "GRAD" 0;
+
+    &:hover {
+      text-decoration: none;
+      font-variation-settings: "wdth" 25, "opsz" 8, "wght" 400, "GRAD" 0;
+    }
+  }
+}
+
+/* END-VERSION-MOVIL */
+
+
+/* VERSION-TABLET */
+
+@media (min-width:391px) and (max-width:768px) {
+
+
+  .header {
+    height: 60vh;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    .shika {
+      font-family: "Roboto";
+      font-size: 4rem;
+      font-variation-settings: "wdth" 200, "wght" 400;
+      transition: 200ms;
+  
+      &:hover {
+        font-variation-settings: "wdth" 800, "wght" 800;
+      }
+    }
+  
+    .texto-inicio {
+      margin-top: 2rem;
+      margin-left: auto;
+      text-align: right;
+  
+      p {
+        width: 70vw;
+      }
+    }
+  }
+  .ver-mas {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+  
+    .marquesina {
+      text-align: left;
+    }
+  
+    .marquesina1 {
+      text-align: right;
+    }
+  }
+
+
+
+  .hab {
+    padding: 0 2rem;
+    font-size: 5rem;
+  
+    font-variation-settings: "wdth" 30, "opsz" 8, "wght" 200, "GRAD" 0;
+    transition: 300ms;
+  
+    &:hover {
+      font-variation-settings: "wdth" 50, "opsz" 8, "wght" 600, "GRAD" 0;
+    }
+  }
+
+
+  .pregunta {
+    margin-top: -10%;
+    padding: 2rem;
+    font-size: 3.5rem;
+    line-height: 1;
+  
+    & p:first-child {
+      text-align: left;
+    }
+  
+    & p:last-child {
+      text-align: right;
+    }
+  }
+
+
+  .contacto {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+  
+    .correo1 {
+      font-size: 1rem;
+      font-variation-settings: "wdth" 25, "opsz" 8, "wght" 200, "GRAD" 0;
+      transition: 200ms;
+  
+      &:hover {
+        font-variation-settings: "wdth" 50, "opsz" 8, "wght" 600, "GRAD" 0;
+      }
+    }
+  
+    .rrss {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+    }
+  
+    .rrss img {
+      width: 3rem;
+      height: auto;
+      padding: 1rem;
+    }
+  }
+
+
+
+}
+
+
+/* END-VERSION-TABLET */
+
+
+
+
+
+
+
+
+/* VERSION-DESKTOP */
+
+@media (min-width:769px){
+
+  .header{
+    height: 90vh;
+  }
+
+
+  .hab {
+    padding: 0 2rem;
+    font-size: 7rem;
+  
+    font-variation-settings: "wdth" 30, "opsz" 8, "wght" 200, "GRAD" 0;
+    transition: 300ms;
+  
+    &:hover {
+      font-variation-settings: "wdth" 50, "opsz" 8, "wght" 600, "GRAD" 0;
+    }
+  }
+
+
+  .pregunta {
+    margin-top: -10%;
+    padding: 2rem;
+    font-size: 5rem;
+    line-height: 1;
+  
+    & p:first-child {
+      text-align: left;
+    }
+  
+    & p:last-child {
+      text-align: right;
+    }
+  }
+
+
+  .contacto {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+  
+    .correo1 {
+      font-size: 1rem;
+      font-variation-settings: "wdth" 25, "opsz" 8, "wght" 200, "GRAD" 0;
+      transition: 200ms;
+  
+      &:hover {
+        font-variation-settings: "wdth" 50, "opsz" 8, "wght" 600, "GRAD" 0;
+      }
+    }
+  
+    .rrss {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+    }
+  
+    .rrss img {
+      width: 3rem;
+      height: auto;
+      padding: 1rem;
+    }
+  }
+
+
+
+
+}
+
+
+/* END-VERSION-TABLET */

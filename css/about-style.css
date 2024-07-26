@@ -1,0 +1,523 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+  
+
+
+/* VERSION-MOVIL */
+body {
+  width: 100vw;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+
+
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: normal;
+
+  color: white;
+  background-color: rgb(24, 24, 16);
+
+  font-variation-settings: "wdth" 25, "opsz" 8, "wght" 200, "GRAD" 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.bold {
+  font-variation-settings: "wdth" 25, "opsz" 8, "wght" 600, "GRAD" 0;
+}
+
+.italic {
+  font-variation-settings: "wdth" 25, "opsz" 8, "wght" 200, "GRAD" 0, "slnt" -10;
+}
+
+/* HEADER */
+
+#header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 3%;
+
+
+  .menu{
+    padding-top: 30%;
+    width: auto;
+    height: 2rem;
+  
+  }
+}
+/* END-HEADER */
+
+/* BODY */
+
+#about-me{
+  position: relative;
+  inset: 0;
+  width: 100vw;
+  height: 40vh;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+
+  h1{
+    position: relative;
+    z-index: 2;
+    font-size: 15vw;
+  }
+
+  img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+}
+
+
+
+#cv {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  
+  .curriculum {
+    display: flex;
+    align-items: center;
+
+  
+    .work {
+      font-variation-settings: "wdth" 30, "opsz" 8, "wght" 200, "GRAD" 0;
+      font-size: 32pt;
+    
+    }
+  
+  
+  
+    .icon {
+      width: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+    
+    }
+  }
+  
+  
+  .element {
+  
+  position: relative;
+  height: 5rem;
+  padding: 1rem 3rem;
+  overflow: hidden;
+  background-color: rgb(24, 24, 16);
+  
+  
+  
+  .child {
+    position: absolute;
+    inset: 0;
+    padding: 0.5rem 1rem;
+    z-index: 20;
+    transition: 200ms;
+  
+    background-color: white;
+    color: black;
+
+    font-size: 1rem;
+  
+    transform: translateY(100%);
+  
+  }
+  
+  
+  
+  &:hover .child {
+    transform: translateY(0%);
+  
+  }
+  
+  }
+  
+}
+
+#estudios{
+  margin-top: 2rem;
+
+  .encabezado{
+    text-align: center;
+    font-size: 2rem;
+    background-color: white;
+    color: rgb(24, 24, 16);
+  }
+
+  .dg-lat-izq{
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    background:linear-gradient( 90deg, rgb(54, 77, 52), rgb(24, 24, 16));
+  }
+
+  .dg-lat-dch{
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    background:linear-gradient( -90deg, rgb(54, 77, 52), rgb(24, 24, 16));
+    text-align: right;
+  }
+
+}
+/* END-BODY */
+
+
+/* FOOTER */
+
+.pie {
+  border-top: 1px solid white;
+
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+
+  .copyright {
+    font-size: 1rem;
+    font-variation-settings: "wdth" 25, "opsz" 8, "wght" 600, "GRAD" 0;
+  }
+
+  .arriba {
+    font-size: 1rem;
+    text-decoration: line-through;
+    font-variation-settings: "wdth" 25, "opsz" 8, "wght" 200, "GRAD" 0;
+
+    &:hover {
+      text-decoration: none;
+      font-variation-settings: "wdth" 25, "opsz" 8, "wght" 400, "GRAD" 0;
+    }
+  }
+  
+/* END-FOOTER */
+
+}
+
+/* END-VERSION-MOVIL */
+
+
+
+
+
+
+
+
+
+
+
+
+/* VERSION-TABLET */
+
+@media (min-width:391px) and (max-width:768px) {
+
+  /* BODY */
+  #cv {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  
+    .curriculum {
+      display: flex;
+      align-items: center;
+
+  
+      .work {
+        font-variation-settings: "wdth" 30, "opsz" 8, "wght" 200, "GRAD" 0;
+        font-size: 32pt;
+      
+      }
+  
+  
+  
+      .icon {
+        width: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+      
+      }
+    }
+  
+  
+    .element {
+    
+      position: relative;
+      height: 5rem;
+      padding: 1rem 3rem;
+      overflow: hidden;
+      background-color: rgb(24, 24, 16);
+    
+    
+    
+      .child {
+        position: absolute;
+        inset: 0;
+        padding: 1rem 2rem;
+        z-index: 20;
+        transition: 200ms;
+      
+        background-color: white;
+        color: black;
+
+        font-size: 1.2rem;
+      
+        transform: translateY(100%);
+    
+      }
+  
+  
+  
+      &:hover .child {
+        transform: translateY(0%);
+      
+      }
+  
+    }
+  
+  }
+
+  #estudios{
+    margin-top: 2rem;
+
+    .encabezado{
+      text-align: center;
+      font-size: 2rem;
+      background-color: white;
+      color: rgb(24, 24, 16);
+    }
+
+    .dg-lat-izq{
+      font-size: 1.2rem;
+      padding: 1rem 3rem;
+      background:linear-gradient( 90deg, rgb(54, 77, 52), rgb(24, 24, 16));
+    }
+
+    .dg-lat-dch{
+      font-size: 1.2rem;
+      padding: 1rem 3rem;
+      background:linear-gradient( -90deg, rgb(54, 77, 52), rgb(24, 24, 16));
+      text-align: right;
+    }
+
+  }
+  /* END-BODY */
+
+
+
+  /* FOOTER */
+
+  .pie {
+    border-top: 1px solid white;
+  
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  
+    .copyright {
+      font-size: 1.2rem;
+      font-variation-settings: "wdth" 25, "opsz" 8, "wght" 600, "GRAD" 0;
+    }
+  
+    .arriba {
+      font-size: 1.2rem;
+      text-decoration: line-through;
+      font-variation-settings: "wdth" 25, "opsz" 8, "wght" 200, "GRAD" 0;
+  
+      &:hover {
+        text-decoration: none;
+        font-variation-settings: "wdth" 25, "opsz" 8, "wght" 400, "GRAD" 0;
+      }
+    }
+  }  
+  /* END-FOOTER */
+
+}
+
+/* END-VERSION-TABLET */
+
+
+
+
+
+
+
+
+
+/* VERSION-DESKTOP */
+
+@media (min-width:769px){
+
+ 
+
+  /* BODY */
+
+  #about-me{
+    position: relative;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+    h1{
+      position: relative;
+      z-index: 2;
+      font-size: 15vw;
+    }
+
+    img{
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+    }
+  }
+
+
+  #cv {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  
+    .curriculum {
+      display: flex;
+      align-items: center;
+
+  
+      .work {
+        font-variation-settings: "wdth" 30, "opsz" 8, "wght" 200, "GRAD" 0;
+        font-size: 4rem;
+      
+      }
+  
+  
+  
+      .icon {
+        width: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+      
+      }
+    }
+  
+  
+    .element {
+    
+      position: relative;
+      height: 5rem;
+      padding: 1rem 3rem;
+      overflow: hidden;
+      background-color: rgb(24, 24, 16);
+    
+    
+    
+      .child {
+        position: absolute;
+        inset: 0;
+        padding: 1rem 5rem;
+        z-index: 20;
+        transition: 200ms;
+      
+        background-color: white;
+        color: black;
+
+        font-size: 1.2rem;
+      
+        transform: translateY(100%);
+    
+      }
+  
+  
+  
+      &:hover .child {
+        transform: translateY(0%);
+      
+      }
+  
+    }
+  
+  }
+
+  #estudios{
+    margin-top: 2rem;
+
+    .encabezado{
+      text-align: center;
+      font-size: 2rem;
+      background-color: white;
+      color: rgb(24, 24, 16);
+    }
+
+    .dg-lat-izq{
+      font-size: 1.2rem;
+      padding: 1rem 3rem;
+      background:linear-gradient( 90deg, rgb(54, 77, 52), rgb(24, 24, 16));
+    }
+
+    .dg-lat-dch{
+      font-size: 1.2rem;
+      padding: 1rem 3rem;
+      background:linear-gradient( -90deg, rgb(54, 77, 52), rgb(24, 24, 16));
+      text-align: right;
+    }
+
+  }
+  /* END-BODY */
+
+
+
+  /* FOOTER */
+
+  .pie {
+    border-top: 1px solid white;
+  
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  
+    .copyright {
+      font-size: 1.2rem;
+      font-variation-settings: "wdth" 25, "opsz" 8, "wght" 600, "GRAD" 0;
+    }
+  
+    .arriba {
+      font-size: 1.2rem;
+      text-decoration: line-through;
+      font-variation-settings: "wdth" 25, "opsz" 8, "wght" 200, "GRAD" 0;
+  
+      &:hover {
+        text-decoration: none;
+        font-variation-settings: "wdth" 25, "opsz" 8, "wght" 400, "GRAD" 0;
+      }
+    }
+  
+  }
+  /* END-FOOTER */
+
+}
+
+/* END-VERSION-DESKTOP */
